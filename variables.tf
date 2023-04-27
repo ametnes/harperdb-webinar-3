@@ -47,6 +47,7 @@ variable "admin_user" {
     password = string
   })
   description = "Credentials to use for the Admin user"
+  sensitive   = true
 }
 
 variable "cluster_user" {
@@ -55,4 +56,5 @@ variable "cluster_user" {
     password = string
   })
   description = "Credentials to use for the Clustering user"
+  sensitive   = true
 }
